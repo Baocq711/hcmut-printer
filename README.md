@@ -73,7 +73,7 @@ vite.config.ts
 
 1. Clone repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/Baocq711/hcmut-printer.git
    cd hcmut-printer
    ```
 2. Cài đặt các phụ thuộc:
