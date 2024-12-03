@@ -23,7 +23,7 @@ import {
 import { useState } from 'react';
 
 const PrinterPage = () => {
-  const [tab, setTab] = useState<'all' | 'active' | 'inactive'>('all');
+  const [, setTab] = useState<'all' | 'active' | 'inactive'>('all');
 
   return (
     <div className='flex gap-8'>

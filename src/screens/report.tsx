@@ -31,7 +31,7 @@ import {
 
 const ReportPage = () => {
   const [date, setDate] = useState<DateRange>();
-  const [tab, setTab] = useState<'all' | 'success' | 'fail' | 'pending'>('all');
+  const [, setTab] = useState<'all' | 'success' | 'fail' | 'pending'>('all');
   return (
     <div className='p-6'>
       <div className='flex justify-between mb-6'>
