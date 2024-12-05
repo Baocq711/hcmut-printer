@@ -1,0 +1,22 @@
+.solar-card-transfer-linear,
+.solar-card-transfer-linear * {
+	box-sizing: border-box;
+}
+
+.solar-card-transfer-linear {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	overflow: hidden;
+}
+
+.solar-card-transfer-linear .group {
+	width: 83.33%;
+	height: 66.67%;
+	position: absolute;
+	right: 8.33%;
+	left: 8.33%;
+	bottom: 16.67%;
+	top: 16.67%;
+	overflow: visible;
+}

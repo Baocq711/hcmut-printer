@@ -1,6 +1,8 @@
 import Layout from '@/components/layout/layout';
+import Account from '@/screens/account';
 import HistoryPage from '@/screens/history';
 import HomePage from '@/screens/home';
+import Login from '@/screens/login';
 import PrintDocumentIdPage from '@/screens/print-document/[id]/print-document.id';
 import PrintDocumentPage from '@/screens/print-document/print-document';
 import PrinterPage from '@/screens/printer';
@@ -37,8 +39,16 @@ export const router = createBrowserRouter(
           path: '/printer',
           element: <PrinterPage />,
         },
+        {
+          path: '/account',
+          element: <Account />,
+        },
       ],
     },
+    {
+      path:"/login",
+      element: <Login/>
+    }
   ],
   {
     future: {

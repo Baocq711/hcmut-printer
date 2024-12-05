@@ -26,7 +26,7 @@ const PrinterPage = () => {
   const [, setTab] = useState<'all' | 'active' | 'inactive'>('all');
 
   return (
-    <div className='flex gap-8'>
+    <div className='flex gap-8 '>
       <div className='w-56 p-6 flex flex-col gap-5'>
         <div className='flex justify-between'>
           <div className='text-[20px]/[34px]'>Lọc</div>

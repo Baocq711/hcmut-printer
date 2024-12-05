@@ -1,0 +1,31 @@
+.button-property-1-default-size-small,
+.button-property-1-default-size-small * {
+	box-sizing: border-box;
+}
+
+.button-property-1-default-size-small {
+	background: var(--primary-high, #8b9373);
+	border-radius: 10px;
+	padding: 8px;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	align-items: center;
+	justify-content: center;
+	height: 54px;
+	position: relative;
+}
+
+.button-property-1-default-size-small .solar-pie-chart-2-bold-instance {
+	flex-shrink: 0 !important;
+}
+
+.button-property-1-default-size-small .withdraw-money {
+	color: var(--white, #ffffff);
+	text-align: left;
+	font-family: var(--headline-font-family, "SpaceGrotesk-Bold", sans-serif);
+	font-size: var(--headline-font-size, 16px);
+	line-height: var(--headline-line-height, 23px);
+	font-weight: var(--headline-font-weight, 700);
+	position: relative;
+}

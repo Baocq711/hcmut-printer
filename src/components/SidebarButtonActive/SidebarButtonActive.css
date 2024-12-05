@@ -1,0 +1,31 @@
+.sidebar-button-property-1-sidebar-active,
+.sidebar-button-property-1-sidebar-active * {
+	box-sizing: border-box;
+}
+
+.sidebar-button-property-1-sidebar-active {
+	background: var(--primary-high, #8b9373);
+	border-radius: 10px;
+	padding: 10px 32px 10px 32px;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	align-items: center;
+	justify-content: flex-start;
+	width: 232px;
+	position: relative;
+}
+
+.sidebar-button-property-1-sidebar-active .solar-pie-chart-2-bold-instance {
+	flex-shrink: 0 !important;
+}
+
+.sidebar-button-property-1-sidebar-active .b-ng-i-u-khi-n {
+	color: var(--white, #ffffff);
+	text-align: left;
+	font-family: var(--headline-font-family, "SpaceGrotesk-Bold", sans-serif);
+	font-size: var(--headline-font-size, 16px);
+	line-height: var(--headline-line-height, 23px);
+	font-weight: var(--headline-font-weight, 700);
+	position: relative;
+}

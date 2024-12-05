@@ -37,15 +37,15 @@ const PrintDocumentIdPage = () => {
   };
 
   return (
-    <div className='grid grid-cols-[498px_auto] gap-8'>
+    <div className='grid grid-cols-[498px_auto] gap-8 mt-1'>
       {contextHolder}
       <div className='w-full px-6 flex flex-col gap-6'>
         <div>
           <img
             src={image}
             alt=''
-            width={450}
-            height={450}
+            width={500}
+            height={500}
             className='rounded-lg'
           />
         </div>
@@ -73,12 +73,12 @@ const PrintDocumentIdPage = () => {
           />
         </div>
       </div>
-      <div className='w-full px-6 flex flex-col gap-5'>
+      <div className='w-full px-6 flex flex-col pb-10 pt-1'>
         <div className='flex gap-6'>
           <div className='flex flex-col gap-4 w-full'>
             <div className='flex items-center gap-2'>
               <div className='size-[35px] bg-black bg-opacity-10 flex items-center justify-center rounded-[10px]'>
-                <PiPackage size={24} className='translate-x-[0.5px]' />
+                <PiPackage size={24} className='translate-x-[0.5px]' style={{color:"#8B9373"}} />
               </div>
               Giờ nhận tài liệu
             </div>
@@ -90,7 +90,7 @@ const PrintDocumentIdPage = () => {
           <div className='flex flex-col gap-4 w-full'>
             <div className='flex items-center gap-2'>
               <div className='size-[35px] bg-black bg-opacity-10 flex items-center justify-center rounded-[10px]'>
-                <HiOutlineShoppingCart size={24} />
+                <HiOutlineShoppingCart size={24} style={{color:"#F4A754"}} />
               </div>
               Địa điểm
             </div>
@@ -103,7 +103,7 @@ const PrintDocumentIdPage = () => {
         <div className='pt-6 flex flex-col gap-6 h-full'>
           <div className='flex gap-6'>
             <div className='text-3xl w-full'>{'HP 107a (4ZB77A)'}</div>
-            <div className='text-3xl w-full'>P909</div>
+            <div className='text-3xl w-full' style={{color:"#8B9373"}}>P909</div>
           </div>
           <div className='flex flex-col gap-4 mr-16'>
             <div>Mô tả</div>
@@ -130,7 +130,7 @@ const PrintDocumentIdPage = () => {
           <div className='flex-grow'></div>
           <AlertDialog>
             <AlertDialogTrigger asChild>
-              <Button className='mr-16'>Tải file in</Button>
+              <Button className='mr-16' style={{background:"#8B9373"}}>Tải file in</Button>
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
@@ -207,7 +207,8 @@ const PrintDocumentIdPage = () => {
                   Thoát
                 </AlertDialogCancel>
                 <AlertDialogAction
-                  className='w-full'
+                  className='w-full '
+                  style={{background:"#8B9373"}}
                   onClick={() => {
                     setRangeValue(null);
                     setTypePaperValue(null);

@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import Modal from '@/components/ui/modal';
@@ -11,6 +12,19 @@ import {
 import { useState } from 'react';
 import { isNumber } from 'class-validator';
 import { notification } from 'antd';
+
+// Hạnh 
+import "../assets/Css/Dashboard.css";
+import LineChart from "../components/LineChart";
+import Grid  from '@mui/material/Grid';
+import TwoBox from '../components/TwoBox';
+import SpendingStatus from '../components/SpendingStatus';
+import PaymentCard from '../components/PaymentCard';
+import RecentTransaction from '../components/RecentTransaction';
+import Box from '@mui/material/Box';
+
+// import LineChart from "../components/LineChart"
+
 
 const PriceOfPaper: { [key: string]: number } = {
   A1: 4000,
@@ -37,12 +51,14 @@ const HomePage = () => {
   };
 
   return (
+    
+    <>
     <div>
       {contextHolder}
-
-      <Button variant='default' onClick={() => setIsOpenAdd(!isOpenAdd)}>
+    
+      {/* <Button variant='default' onClick={() => setIsOpenAdd(!isOpenAdd)}>
         Mua giấy in
-      </Button>
+      </Button> */}
       <Modal
         isOpen={isOpenAdd}
         title='Mua thêm trang in'
@@ -135,7 +151,7 @@ const HomePage = () => {
               setIsOpenAdd(!isOpenAdd);
               setIsOpenCheck(!isOpenCheck);
             }}
-          >
+          > 
             Quay lại
           </Button>
           <Button
@@ -154,6 +170,21 @@ const HomePage = () => {
         </div>
       </Modal>
     </div>
+     <div className="flex-grow h-full bg-white grid grid-cols-2 gap-4">
+  {/* Col 1 */}
+  <div className="p-4 h-screen flex flex-col">
+    <LineChart />
+    <TwoBox  setOpen={setIsOpenAdd} isOpen={isOpenAdd} />
+    <SpendingStatus />
+  </div>
+
+  {/* Col 2 */}
+  <div className="p-4 h-full flex flex-col pl-10 pr-40">
+      <PaymentCard />
+      <RecentTransaction />
+    </div>
+  </div>
+    </>
   );
 };
 

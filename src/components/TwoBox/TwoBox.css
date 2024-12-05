@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+
+.printed,
+.remaining {
+	background: var(--white, #ffffff);
+	border-radius: 10px;
+	width: 337px;
+	height: 140px;
+	/* position: absolute; */
+	overflow: hidden;
+}
+
+.printed .content-box,
+.remaining .content-box {
+	margin: 23.5px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.printed .top,
+.remaining .top {
+	display: flex;
+	flex-direction: row;
+
+	align-items: center;
+}
+
+.printed .box-icon,
+.remaining .box-icon {
+	background: var(--primary-high, #8b9373);
+	border-radius: 10px;
+	width: 35px;
+	height: 35px;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.printed .box-icon {
+	background: var(--primary-high, #F4A754);
+}
+
+.printed .box-icon .icon,
+.remaining .box-icon .icon {
+	width: 20px;
+	height: 20px;
+	color: white
+}
+
+
+.printed .text,
+.remaining .text {
+	color: var(--title, #111111);
+	margin-left: 8px;
+	font-family: var(--body-font-family, "SpaceGrotesk-Regular", sans-serif);
+	font-size: var(--body-font-size, 16px);
+	line-height: var(--body-line-height, 23px);
+	font-weight: var(--body-font-weight, 400);
+}
+
+.printed .bottom {
+	bottom: 0;
+	/* left: 0;  */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* justify-content: space-between; */
+	margin-top: 8px;
+	/* gap: 10px; */
+}
+
+.remaining .bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.printed .big-text,
+.remaining .big-text {
+	color: var(--title, #111111);
+	text-align: left;
+	font-size: 36px;
+	line-height: 110%;
+	font-weight: var(--h2-title-font-weight, 700);
+}
+
+.printed .small-text,
+.remaining .small-text {
+	text-align: left;
+	font-size: var(--body-font-size, 16px);
+	line-height: var(--body-line-height, 23px);
+	font-weight: var(--body-font-weight, 400);
+	/* opacity: 0.2; */
+	color: #CFCFCF !important;
+}
+
+.remaining .text-group {
+	display: flex;
+	align-items: center;
+}
+
+.remaining .button {
+	background: #F4A754;
+	padding-left: 26.5px;
+	padding-right: 26.5px;
+	color: white;
+	font-weight: 700;
+	border-radius: 5px;
+	right: 0;
+}

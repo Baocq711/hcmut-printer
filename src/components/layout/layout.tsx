@@ -6,12 +6,20 @@ import { Outlet } from 'react-router-dom';
 const Layout = () => {
   return (
     <SidebarProvider>
-      <RootSidebar />
-      <div className='w-full'>
-        <Header />
-        <main className='mt-8 ml-8 pr-28'>
-          <Outlet />
-        </main>
+      <div className="flex h-screen w-full"> {/* Full width and height */}
+        {/* Sidebar */}
+        <RootSidebar />
+
+        {/* Main content, takes up remaining width and height */}
+        <div className="flex-1 flex flex-col">
+          {/* Header */}
+          <Header />
+
+          {/* Main content */}
+          <main className="flex-1">
+            <Outlet />
+          </main>
+        </div>
       </div>
     </SidebarProvider>
   );

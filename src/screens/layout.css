@@ -1,0 +1,75 @@
+a,
+button,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu,
+ol,
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--body-font-family, "SpaceGrotesk-Regular", sans-serif) !important;
+	font-size: var(--body-font-size, 16px) !important;
+	line-height: var(--body-line-height, 23px) !important;
+	font-weight: var(--body-font-weight, 400) !important;
+	box-sizing: border-box;
+}
+/* 
+.sidebar-button {
+	color: #000000;
+}
+
+.sidebar-button:hover {
+	color: #000000;
+}
+
+.sidebar-button.active {
+	background: var(--primary-high, #8b9373);
+	border-radius: 10px;
+	padding: 10px 32px;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	align-items: center;
+	justify-content: flex-start;
+	width: 232px;
+	position: relative;
+}
+
+.sidebar-button.active .text {
+	color: var(--white, #ffffff);
+	text-align: left;
+	font-family: var(--headline-font-family, "SpaceGrotesk-Bold", sans-serif);
+	font-size: var(--headline-font-size, 16px);
+	line-height: var(--headline-line-height, 23px);
+	font-weight: var(--headline-font-weight, 700);
+	position: relative;
+}
+
+.sidebar-button.active .icon-frame {
+	color: var(--white, #ffffff);
+} */
+
+
+.highlight-yellow {
+	background-color: yellow;
+	color: black; /* Đảm bảo chữ đen dễ đọc */
+  }
