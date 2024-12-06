@@ -6,9 +6,12 @@
 	background: var(--white, #ffffff);
 	height: 60px;
 	position: sticky;
+	top: 0;
 	overflow: hidden;
 	z-index: 999 !important;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	isolation: isolate;
+	overflow: visible;
 }
 
 .header-property-1-default .frame-119 {
