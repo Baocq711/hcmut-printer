@@ -211,12 +211,12 @@
       "value_out": 0
     },
     {
-      "date": "Oct 02 2024",
+      "date": "Dec 02 2024",
       "value_in": 141.84,
       "value_out": 0
     },
     {
-      "date": "Oct 03 2024",
+      "date": "Dec 03 2024",
       "value_in": 0,
       "value_out": 50.82
     },
@@ -226,89 +226,214 @@
       "value_out": 64.64
     },
     {
-      "date": "Oct 05 2024",
+      "date": "Dec 05 2024",
       "value_in": 0,
       "value_out": 52.49
     },
     {
-      "date": "Oct 06 2024",
+      "date": "Dec 06 2024",
       "value_in": 0,
       "value_out": 38.67
     },
     {
-      "date": "Oct 07 2024",
+      "date": "Dec 07 2024",
       "value_in": 136.14,
       "value_out": 0
     },
     {
-      "date": "Oct 08 2024",
+      "date": "Dec 08 2024",
       "value_in": 147.26,
       "value_out": 0
     },
     {
-      "date": "Oct 09 2024",
+      "date": "Dec 09 2024",
       "value_in": 132.62,
       "value_out": 0
     },
     {
-      "date": "Oct 10 2024",
+      "date": "Dec 10 2024",
       "value_in": 104.58,
       "value_out": 0
     },
     {
-      "date": "Oct 11 2024",
+      "date": "Dec 11 2024",
       "value_in": 0,
       "value_out": 69.67
     },
     {
-      "date": "Oct 12 2024",
+      "date": "Dec 12 2024",
       "value_in": 0,
       "value_out": 31.6
     },
     {
-      "date": "Oct 13 2024",
+      "date": "Dec 13 2024",
       "value_in": 73.48,
       "value_out": 0
     },
     {
-      "date": "Oct 14 2024",
+      "date": "Dec 14 2024",
       "value_in": 139.24,
       "value_out": 0
     },
     {
-      "date": "Oct 15 2024",
+      "date": "Dec 15 2024",
       "value_in": 106.84,
       "value_out": 0
     },
     {
-      "date": "Oct 16 2024",
+      "date": "Dec 16 2024",
       "value_in": 136.79,
       "value_out": 0
     },
     {
-      "date": "Oct 17 2024",
+      "date": "Dec 17 2024",
       "value_in": 116.19,
       "value_out": 0
     },
     {
-      "date": "Oct 18 2024",
+      "date": "Dec 18 2024",
       "value_in": 0,
       "value_out": 64.73
     },
     {
-      "date": "Oct 19 2024",
+      "date": "Dec 19 2024",
       "value_in": 0,
       "value_out": 55.78
     },
     {
-      "date": "Oct 20 2024",
+      "date": "Dec 20 2024",
       "value_in": 78,
       "value_out": 55.78
     },
     {
-      "date": "Oct 21 2024",
+      "date": "Dec 21 2024",
       "value_in": 58,
       "value_out": 55.78
+    }
+  ],
+  "printer": [
+    {
+      "id": "P901",
+      "name": "HP 107a (4ZB77A)",
+      "status": "active",
+      "campus": "1",
+      "size": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": "P902",
+      "name": "Canon PIXMA MG2520",
+      "status": "inactive",
+      "campus": "2",
+      "size": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": "P903",
+      "name": "Brother HL-L2395DW",
+      "status": "active",
+      "campus": "1",
+      "size": [2, 3, 4, 5]
+    },
+    {
+      "id": "P904",
+      "name": "Epson EcoTank L3150",
+      "status": "inactive",
+      "campus": "2",
+      "size": [1, 2, 3]
+    },
+    {
+      "id": "P905",
+      "name": "Samsung Xpress M2020W",
+      "status": "active",
+      "campus": "2",
+      "size": [3, 4, 5]
+    },
+    {
+      "id": "P906",
+      "name": "Xerox Phaser 3020",
+      "status": "active",
+      "campus": "1",
+      "size": [1, 2, 3, 4]
+    },
+    {
+      "id": "P907",
+      "name": "HP LaserJet Pro M15w",
+      "status": "inactive",
+      "campus": "1",
+      "size": [1, 2, 3, 5]
+    },
+    {
+      "id": "P908",
+      "name": "Kyocera ECOSYS P5021cdw",
+      "status": "active",
+      "campus": 2,
+      "size": [1, 3, 4]
+    },
+    {
+      "id": "P909",
+      "name": "Canon imageCLASS LBP6230dw",
+      "status": "active",
+      "campus": "2",
+      "size": [2, 3, 4, 5]
+    },
+    {
+      "id": "P910",
+      "name": "Dell E515dw",
+      "status": "inactive",
+      "campus": "2",
+      "size": [1, 4, 5]
+    }
+  ],
+  "history": [
+    {
+      "id": "P910",
+      "printer": "P909",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "01/12/2024",
+      "status": "succes"
+    },
+    {
+      "id": "P911",
+      "printer": "P910",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "24/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P912",
+      "printer": "P911",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "15/12/2024",
+      "status": "fail"
+    },
+    {
+      "id": "P913",
+      "printer": "P911",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "30/12/2024",
+      "status": "fail"
+    },
+    {
+      "id": "P914",
+      "printer": "P911",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "31/12/2024",
+      "status": "fail"
+    }
+  ],
+  "report": [
+    {
+      "id": "P910",
+      "printer": "P909",
+      "price": "233.000",
+      "paper": "A4",
+      "number": "50",
+      "date": "12/12/2024",
+      "status": "succes"
     }
   ]
 }
