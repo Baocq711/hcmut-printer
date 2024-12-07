@@ -3,6 +3,8 @@ import Account from '@/screens/account';
 import HistoryPage from '@/screens/history';
 import HomePage from '@/screens/home';
 import Login from '@/screens/login';
+import MomoPage from '@/screens/momo';
+import PaymentPage from '@/screens/payment';
 import PrintDocumentIdPage from '@/screens/print-document/[id]/print-document.id';
 import PrintDocumentPage from '@/screens/print-document/print-document';
 import PrinterPage from '@/screens/printer';
@@ -46,9 +48,17 @@ export const router = createBrowserRouter(
       ],
     },
     {
-      path:"/login",
-      element: <Login/>
-    }
+      path: '/login',
+      element: <Login />,
+    },
+    {
+      path: '/payment',
+      element: <PaymentPage />,
+    },
+    {
+      path: '/momo',
+      element: <MomoPage />,
+    },
   ],
   {
     future: {

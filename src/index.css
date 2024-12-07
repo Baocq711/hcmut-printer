@@ -226,3 +226,9 @@ table {
     scrollbar-width: none; /* Firefox */
   }
 }
+
+@layer components {
+  .border-bottom-black {
+    @apply border-b border-black border-solid;
+  }
+}
