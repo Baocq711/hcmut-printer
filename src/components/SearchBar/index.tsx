@@ -19,7 +19,7 @@ export default function SearchBar() {
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
       // Find the path for the selected option
-      const link = topLinks.find(item => item.title === selectedOption);
+      const link = topLinks.find((item) => item.title === selectedOption);
       if (link) {
         navigate(link.path); // Navigate to the path
       }
@@ -27,19 +27,29 @@ export default function SearchBar() {
   };
 
   return (
-    <Stack spacing={2} sx={{ width: 250,border:"none !important" }}>
+    <Stack
+      spacing={2}
+      sx={{
+        marginTop: '20px',
+        width: 250,
+        height: 100,
+        border: 'none !important',
+      }}
+    >
       <Autocomplete
         freeSolo
-        id="free-solo-2-demo"
+        id='free-solo-2-demo'
         disableClearable
         options={topLinks.map((option) => option.title)}
         value={selectedOption}
         onChange={(event, newValue) => setSelectedOption(newValue || '')} // Update selected option
-        onInputChange={(event, newInputValue) => setSelectedOption(newInputValue)} // Update on input change
+        onInputChange={(event, newInputValue) =>
+          setSelectedOption(newInputValue)
+        } // Update on input change
         renderInput={(params) => (
           <TextField
             {...params}
-            label="Tìm kiếm"
+            label='Tìm kiếm'
             onKeyDown={handleKeyDown} // Handle Enter key press
             slotProps={{
               input: {
@@ -50,7 +60,7 @@ export default function SearchBar() {
             InputProps={{
               ...params.InputProps,
               startAdornment: (
-                <InputAdornment position="start">
+                <InputAdornment position='start'>
                   <SearchIcon />
                 </InputAdornment>
               ),
@@ -58,7 +68,7 @@ export default function SearchBar() {
           />
         )}
         renderOption={(props, option) => {
-          const link = topLinks.find(item => item.title === option);
+          const link = topLinks.find((item) => item.title === option);
           return (
             <li {...props}>
               <Link to={link ? link.path : '#'}>{option}</Link>

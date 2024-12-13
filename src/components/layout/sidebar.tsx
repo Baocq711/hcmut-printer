@@ -27,7 +27,9 @@ const RootSidebar = () => {
     <Sidebar className='px-5'>
       <SidebarHeader className='flex justify-center items-center h-28 text-2xl'>
         <span className='flex justify-center items-center gap-2'>
-          <HiPrinter />
+          <div className='p-2 bg-[#8B9373] rounded-lg border border-[#8B9373]'>
+            <HiPrinter className='text-white' />
+          </div>
           HCMUT SSPS
         </span>
       </SidebarHeader>
@@ -37,7 +39,7 @@ const RootSidebar = () => {
             Tính năng
           </SidebarGroupLabel>
           <SidebarGroupContent
-            className='text-base font-bold rounded-[10px] px-10 py-[10px] h-11 flex items-center gap-2'
+            className='text-base rounded-[10px] px-10 py-[10px] h-11 flex items-center gap-2'
             style={
               path === '' ? { backgroundColor: '#8B9373', color: 'white' } : {}
             }
@@ -48,7 +50,7 @@ const RootSidebar = () => {
             </Link>
           </SidebarGroupContent>
           <SidebarGroupContent
-            className='text-base font-bold rounded-[10px] px-10 py-[10px] h-11'
+            className='text-base rounded-[10px] px-10 py-[10px] h-11'
             style={
               path === 'print-document'
                 ? { backgroundColor: '#8B9373', color: 'white' }
@@ -61,7 +63,7 @@ const RootSidebar = () => {
             </Link>
           </SidebarGroupContent>
           <SidebarGroupContent
-            className='text-base font-bold rounded-[10px] px-10 py-[10px] h-11'
+            className='text-base rounded-[10px] px-10 py-[10px] h-11'
             style={
               path === 'history'
                 ? { backgroundColor: '#8B9373', color: 'white' }
@@ -74,14 +76,14 @@ const RootSidebar = () => {
             </Link>
           </SidebarGroupContent>
           <SidebarGroupContent
-            className='text-base font-bold rounded-[10px] px-10 py-[10px] h-11'
+            className='text-base rounded-[10px] px-10 py-[10px] h-11'
             style={
               path === 'report'
                 ? { backgroundColor: '#8B9373', color: 'white' }
                 : {}
             }
           >
-            <Link to={'../report'} className='flex items-center'>
+            <Link to={'../report'} className='flex items-center gap-2'>
               <HiOutlineClipboardDocumentList size={24} />
               Báo cáo chi tiêu
             </Link>
@@ -104,25 +106,30 @@ const RootSidebar = () => {
           <SidebarGroupLabel className='text-base px-10 h-11'>
             Hỗ trợ
           </SidebarGroupLabel>
-          <SidebarGroupContent className='text-base font-bold rounded-[10px] px-10 py-[10px] h-11 flex items-center gap-2'>
-            <Link to={'../account'} className='flex items-center'>
+          <SidebarGroupContent className='text-base rounded-[10px] px-10 py-[10px] h-11 flex items-center'>
+            <Link to={'../account'} className='flex items-center gap-2'>
               <HiOutlineUserCircle size={24} />
               Tài khoản
             </Link>
           </SidebarGroupContent>
-          <SidebarGroupContent className='text-base font-bold rounded-[10px] px-10 py-[10px] h-11 flex items-center gap-2'>
-            <HiOutlineCog6Tooth size={24} />
-            Cài đặt
+          <SidebarGroupContent className='text-base rounded-[10px] px-10 py-[10px] h-11 flex items-center'>
+            <div className='flex items-center gap-2'>
+              <HiOutlineCog6Tooth size={24} />
+              Cài đặt
+            </div>
           </SidebarGroupContent>
-          <SidebarGroupContent className='text-base font-bold rounded-[10px] px-10 py-[10px] h-11 flex items-center gap-2'>
-            <Link to={'../login'} className='flex items-center'>
-            <HiArrowRightStartOnRectangle size={24} />
+          <SidebarGroupContent className='text-base rounded-[10px] px-10 py-[10px] h-11 flex items-center'>
+            <Link to={'../login'} className='flex items-center gap-2'>
+              <HiArrowRightStartOnRectangle size={24} />
               Thoát
             </Link>
           </SidebarGroupContent>
         </SidebarGroup>
         <SidebarGroup>
-          <SidebarGroupContent className='px-6 mt-14 h-80  rounded-lg flex flex-col justify-center items-center gap-8' style={{background:"#8B9373"}}>
+          <SidebarGroupContent
+            className='px-6 mt-14 h-80  rounded-lg flex flex-col justify-center items-center gap-8'
+            style={{ background: '#8B9373' }}
+          >
             <span className='text-white text-2xl'>
               Kiểm tra hoạt động in ấn của bạn mọi lúc mọi nơi!
             </span>

@@ -3,30 +3,35 @@ import { HiMinusSm, HiOutlinePrinter } from 'react-icons/hi';
 import { PiMinusSquareThin } from 'react-icons/pi';
 import { TbBorderCornerSquare } from 'react-icons/tb';
 
+interface PaymentContent {
+  contents: string;
+  paymentPeriod: string;
+  paymentType: string;
+  expectedCollectionDate: string;
+  amount: number;
+  provisionalCollection: number;
+  paid: number;
+  remaining: number;
+}
+
+interface ShortContent {
+  no: number;
+  shortContent: string;
+  payment: string;
+  amount: number;
+  paid: number;
+  paymentDate: string;
+  remaining: number;
+  expectedExpiryDate: string;
+}
+
 interface ListPaymentProps {
   semester: number;
-  content: {
-    contents: string;
-    paymentPeriod: string;
-    taymentType: string;
-    expectedCollectionDate: string;
-    amount: number;
-    provisionalCollection: number;
-    paid: number;
-    remaining: number;
-  };
-  shortContent: {
-    no: number;
-    shortContent: string;
-    payment: string;
-    amount: number;
-    paid: number;
-    paymentDate: string;
-    remaining: number;
-    expectedExpiryDate: string;
-  };
-  setIsPay: (isPay: number) => void;
+  content: PaymentContent;
+  shortContent: ShortContent;
+  setIsPay: (value: number) => void;
   isPay: number;
+  onSelect: () => void;
 }
 
 const ListPayment = ({
@@ -35,6 +40,7 @@ const ListPayment = ({
   shortContent,
   setIsPay,
   isPay,
+  onSelect,
 }: ListPaymentProps) => {
   return (
     <>
@@ -48,19 +54,26 @@ const ListPayment = ({
         <p className='flex items-center h-full'>Đã thanh toán</p>
         <p className='flex items-center h-full'>Còn lại</p>
       </div>
+
       <div className='h-8 font-bold uppercase flex items-center gap-1 border-bottom-black'>
         <PiMinusSquareThin />
         học kỳ {semester}
       </div>
 
-      <div className='min-h-[56px] pr-8 grid grid-cols-[32px_repeat(8,_minmax(0,_1fr))_12px] border-bottom-black'>
+      <div
+        className='min-h-[56px] pr-8 grid grid-cols-[32px_repeat(8,_minmax(0,_1fr))_12px] border-bottom-black cursor-pointer'
+        onClick={() => {
+          setIsPay(1);
+          onSelect();
+        }}
+      >
         <div className='h-full w-full flex items-center'>
           <HiMinusSm size={20} />
         </div>
 
         <p className='flex items-center h-full'>{content.contents}</p>
         <p className='flex items-center h-full'>{content.paymentPeriod}</p>
-        <p className='flex items-center h-full'>{content.taymentType}</p>
+        <p className='flex items-center h-full'>{content.paymentType}</p>
         <p className='flex items-center h-full'>
           {content.expectedCollectionDate}
         </p>
@@ -76,6 +89,7 @@ const ListPayment = ({
           }
         />
       </div>
+
       <div className='grid grid-cols-[32px_1fr] min-h-16 border-bottom-black'>
         <div className='flex justify-center items-center h-full w-full'>
           <div className='transform -rotate-90 size-3'>
@@ -98,10 +112,10 @@ const ListPayment = ({
           <div className='grid grid-cols-[28px_152px_112px_64px_84px_112px_78px_128px_104px_24px]'>
             <p className='flex items-center h-full'>{shortContent.no}</p>
             <p className='flex items-center h-full'>
-              {shortContent.shortContent}{' '}
+              {shortContent.shortContent}
             </p>
             <p className='flex items-center h-full overflow-hidden w-[calc(100%-12px)]'>
-              {shortContent.payment}{' '}
+              {shortContent.payment}
             </p>
             <p className='flex items-center h-full'>{shortContent.amount}</p>
             <p className='flex items-center h-full'>{shortContent.paid}</p>

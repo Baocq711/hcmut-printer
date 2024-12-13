@@ -2,8 +2,12 @@ import Header from '@/components/Momo/Header';
 import bkulogo from '@/assets/bkulogo.png';
 import qrcode from '@/assets/qrcode.png';
 import { HiQrcode } from 'react-icons/hi';
+import { useLocation } from 'react-router-dom';
 
 const MomoPage = () => {
+  const location = useLocation();
+  const amount = location.state?.amount || 0;
+
   return (
     <div>
       <Header />
@@ -35,7 +39,11 @@ const MomoPage = () => {
           </div>
           <div className='mt-5 flex flex-col gap-2 pb-4'>
             <div>Số tiền</div>
-            <div className='text-4xl'>100.000đ</div>
+            <input
+              type='text'
+              value={new Intl.NumberFormat('vi-VN').format(amount) + ' VNĐ'}
+              disabled
+            />
           </div>
         </div>
         <div className='mx-auto w-[600px] h-[576px] bg-[#d82d8b] text-white flex flex-col items-center rounded-lg'>

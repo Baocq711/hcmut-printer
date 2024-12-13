@@ -1,0 +1,686 @@
+{
+  "transaction": [
+    {
+      "date": "Aug 21 2024",
+      "value_in": 40.26,
+      "value_out": 0,
+      "id": "6ba1"
+    },
+    {
+      "date": "Aug 22 2024",
+      "value_in": 67.87,
+      "value_out": 0,
+      "id": "aa04"
+    },
+    {
+      "date": "Aug 23 2024",
+      "value_in": 104.95,
+      "value_out": 0,
+      "id": "eece"
+    },
+    {
+      "date": "Aug 24 2024",
+      "value_in": 0,
+      "value_out": 33.16,
+      "id": "1336"
+    },
+    {
+      "date": "Aug 25 2024",
+      "value_in": 0,
+      "value_out": 55.92,
+      "id": "a78b"
+    },
+    {
+      "date": "Aug 26 2024",
+      "value_in": 125.5,
+      "value_out": 0,
+      "id": "e5e8"
+    },
+    {
+      "date": "Aug 27 2024",
+      "value_in": 0,
+      "value_out": 85.2,
+      "id": "d690"
+    },
+    {
+      "date": "Aug 28 2024",
+      "value_in": 0,
+      "value_out": 59.34,
+      "id": "d00b"
+    },
+    {
+      "date": "Aug 29 2024",
+      "value_in": 139.61,
+      "value_out": 0,
+      "id": "a2b4"
+    },
+    {
+      "date": "Aug 30 2024",
+      "value_in": 0,
+      "value_out": 82.48,
+      "id": "0680"
+    },
+    {
+      "date": "Aug 31 2024",
+      "value_in": 0,
+      "value_out": 42.24,
+      "id": "08a0"
+    },
+    {
+      "date": "Sep 01 2024",
+      "value_in": 126.37,
+      "value_out": 0,
+      "id": "3323"
+    },
+    {
+      "date": "Sep 02 2024",
+      "value_in": 0,
+      "value_out": 75.43,
+      "id": "7a2e"
+    },
+    {
+      "date": "Sep 03 2024",
+      "value_in": 0,
+      "value_out": 60.11,
+      "id": "f48f"
+    },
+    {
+      "date": "Sep 04 2024",
+      "value_in": 112.18,
+      "value_out": 0,
+      "id": "6b6c"
+    },
+    {
+      "date": "Sep 05 2024",
+      "value_in": 0,
+      "value_out": 61.12,
+      "id": "2b76"
+    },
+    {
+      "date": "Sep 06 2024",
+      "value_in": 0,
+      "value_out": 63.62,
+      "id": "9123"
+    },
+    {
+      "date": "Sep 07 2024",
+      "value_in": 148.27,
+      "value_out": 0,
+      "id": "2db0"
+    },
+    {
+      "date": "Sep 08 2024",
+      "value_in": 0,
+      "value_out": 44.59,
+      "id": "eb04"
+    },
+    {
+      "date": "Sep 09 2024",
+      "value_in": 0,
+      "value_out": 60.17,
+      "id": "a9de"
+    },
+    {
+      "date": "Sep 10 2024",
+      "value_in": 0,
+      "value_out": 47.45,
+      "id": "4031"
+    },
+    {
+      "date": "Sep 11 2024",
+      "value_in": 0,
+      "value_out": 33.2,
+      "id": "e3f7"
+    },
+    {
+      "date": "Sep 12 2024",
+      "value_in": 99.45,
+      "value_out": 0,
+      "id": "75e6"
+    },
+    {
+      "date": "Sep 13 2024",
+      "value_in": 131.63,
+      "value_out": 0,
+      "id": "3373"
+    },
+    {
+      "date": "Sep 14 2024",
+      "value_in": 100.78,
+      "value_out": 0,
+      "id": "f9ea"
+    },
+    {
+      "date": "Sep 15 2024",
+      "value_in": 0,
+      "value_out": 46.85,
+      "id": "0ca5"
+    },
+    {
+      "date": "Sep 16 2024",
+      "value_in": 122.17,
+      "value_out": 0,
+      "id": "971e"
+    },
+    {
+      "date": "Sep 17 2024",
+      "value_in": 0,
+      "value_out": 49.18,
+      "id": "29b9"
+    },
+    {
+      "date": "Sep 18 2024",
+      "value_in": 0,
+      "value_out": 64.06,
+      "id": "6388"
+    },
+    {
+      "date": "Sep 19 2024",
+      "value_in": 143.83,
+      "value_out": 0,
+      "id": "733a"
+    },
+    {
+      "date": "Sep 20 2024",
+      "value_in": 97.77,
+      "value_out": 0,
+      "id": "8124"
+    },
+    {
+      "date": "Sep 21 2024",
+      "value_in": 0,
+      "value_out": 38.29,
+      "id": "4bf6"
+    },
+    {
+      "date": "Sep 22 2024",
+      "value_in": 127.11,
+      "value_out": 0,
+      "id": "928c"
+    },
+    {
+      "date": "Sep 23 2024",
+      "value_in": 121.34,
+      "value_out": 0,
+      "id": "954d"
+    },
+    {
+      "date": "Sep 24 2024",
+      "value_in": 117.42,
+      "value_out": 0,
+      "id": "84ce"
+    },
+    {
+      "date": "Sep 25 2024",
+      "value_in": 0,
+      "value_out": 43.25,
+      "id": "1a8b"
+    },
+    {
+      "date": "Sep 26 2024",
+      "value_in": 111.82,
+      "value_out": 0,
+      "id": "8f11"
+    },
+    {
+      "date": "Sep 27 2024",
+      "value_in": 115.82,
+      "value_out": 0,
+      "id": "150c"
+    },
+    {
+      "date": "Sep 28 2024",
+      "value_in": 0,
+      "value_out": 72.67,
+      "id": "7259"
+    },
+    {
+      "date": "Sep 29 2024",
+      "value_in": 0,
+      "value_out": 37.28,
+      "id": "a5fa"
+    },
+    {
+      "date": "Sep 30 2024",
+      "value_in": 0,
+      "value_out": 50.14,
+      "id": "3c2b"
+    },
+    {
+      "date": "Oct 01 2024",
+      "value_in": 85.96,
+      "value_out": 0,
+      "id": "2277"
+    },
+    {
+      "date": "Dec 02 2024",
+      "value_in": 141.84,
+      "value_out": 0,
+      "id": "fa01"
+    },
+    {
+      "date": "Dec 03 2024",
+      "value_in": 0,
+      "value_out": 50.82,
+      "id": "486e"
+    },
+    {
+      "date": "Oct 04 2024",
+      "value_in": 0,
+      "value_out": 64.64,
+      "id": "df7c"
+    },
+    {
+      "date": "Dec 05 2024",
+      "value_in": 0,
+      "value_out": 52.49,
+      "id": "3831"
+    },
+    {
+      "date": "Dec 06 2024",
+      "value_in": 0,
+      "value_out": 38.67,
+      "id": "3c38"
+    },
+    {
+      "date": "Dec 07 2024",
+      "value_in": 136.14,
+      "value_out": 0,
+      "id": "5e28"
+    },
+    {
+      "date": "Dec 08 2024",
+      "value_in": 147.26,
+      "value_out": 0,
+      "id": "9c5c"
+    },
+    {
+      "date": "Dec 09 2024",
+      "value_in": 132.62,
+      "value_out": 0,
+      "id": "b188"
+    },
+    {
+      "date": "Dec 10 2024",
+      "value_in": 104.58,
+      "value_out": 0,
+      "id": "f0b2"
+    },
+    {
+      "date": "Dec 11 2024",
+      "value_in": 0,
+      "value_out": 69.67,
+      "id": "ca38"
+    },
+    {
+      "date": "Dec 12 2024",
+      "value_in": 0,
+      "value_out": 31.6,
+      "id": "f3a1"
+    },
+    {
+      "date": "Dec 13 2024",
+      "value_in": 73.48,
+      "value_out": 0,
+      "id": "b2ae"
+    },
+    {
+      "date": "Dec 14 2024",
+      "value_in": 139.24,
+      "value_out": 0,
+      "id": "0503"
+    },
+    {
+      "date": "Dec 15 2024",
+      "value_in": 106.84,
+      "value_out": 0,
+      "id": "4fcd"
+    },
+    {
+      "date": "Dec 16 2024",
+      "value_in": 136.79,
+      "value_out": 0,
+      "id": "7207"
+    },
+    {
+      "date": "Dec 17 2024",
+      "value_in": 116.19,
+      "value_out": 0,
+      "id": "c989"
+    },
+    {
+      "date": "Dec 18 2024",
+      "value_in": 0,
+      "value_out": 64.73,
+      "id": "a996"
+    },
+    {
+      "date": "Dec 19 2024",
+      "value_in": 0,
+      "value_out": 55.78,
+      "id": "ed84"
+    },
+    {
+      "date": "Dec 20 2024",
+      "value_in": 78,
+      "value_out": 55.78,
+      "id": "ba5a"
+    },
+    {
+      "date": "Dec 21 2024",
+      "value_in": 58,
+      "value_out": 55.78,
+      "id": "11c3"
+    }
+  ],
+  "printer": [
+    {
+      "id": "P901",
+      "name": "HP 107a (4ZB77A)",
+      "status": "active",
+      "campus": "1",
+      "size": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P902",
+      "name": "Canon PIXMA MG2520",
+      "status": "inactive",
+      "campus": "2",
+      "size": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P903",
+      "name": "Brother HL-L2395DW",
+      "status": "active",
+      "campus": "1",
+      "size": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P904",
+      "name": "Epson EcoTank L3150",
+      "status": "inactive",
+      "campus": "2",
+      "size": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "P905",
+      "name": "Samsung Xpress M2020W",
+      "status": "active",
+      "campus": "2",
+      "size": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P906",
+      "name": "Xerox Phaser 3020",
+      "status": "active",
+      "campus": "1",
+      "size": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "P907",
+      "name": "HP LaserJet Pro M15w",
+      "status": "inactive",
+      "campus": "1",
+      "size": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "P908",
+      "name": "Kyocera ECOSYS P5021cdw",
+      "status": "active",
+      "campus": 2,
+      "size": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "P909",
+      "name": "Canon imageCLASS LBP6230dw",
+      "status": "active",
+      "campus": "2",
+      "size": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P910",
+      "name": "Dell E515dw",
+      "status": "inactive",
+      "campus": "2",
+      "size": [
+        1,
+        4,
+        5
+      ]
+    }
+  ],
+  "history": [
+    {
+      "id": "P910",
+      "printer": "P909",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "01/12/2024",
+      "status": "succes"
+    },
+    {
+      "id": "P911",
+      "printer": "P910",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "24/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P912",
+      "printer": "P911",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "15/12/2024",
+      "status": "fail"
+    },
+    {
+      "id": "P913",
+      "printer": "P911",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "30/12/2024",
+      "status": "fail"
+    },
+    {
+      "id": "P914",
+      "printer": "P911",
+      "price": "233.000",
+      "method": "Paypal",
+      "date": "31/12/2024",
+      "status": "fail"
+    },
+    {
+      "id": "P526",
+      "printer": "P909",
+      "price": "500.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P894",
+      "printer": "P909",
+      "price": "4000.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P363",
+      "printer": "P909",
+      "price": "8000.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P328",
+      "printer": "P909",
+      "price": "500.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P610",
+      "printer": "P909",
+      "price": "500.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    }
+  ],
+  "report": [
+    {
+      "id": "P910",
+      "printer": "P909",
+      "price": "233.000",
+      "paper": "A4",
+      "number": "50",
+      "date": "12/12/2024",
+      "status": "succes"
+    }
+  ],
+  "payments": [
+    {
+      "semester": 241,
+      "content": {
+        "contents": "Học phí đại học chính quy học kỳ 241",
+        "paymentPeriod": "DDDH241.11",
+        "paymentType": "Học phí ĐH chính quy",
+        "expectedCollectionDate": "2024-11-09 00:00:00",
+        "amount": 16218000,
+        "provisionalCollection": 0,
+        "paid": 16218000,
+        "remaining": 0
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Học phí đại học chính quy học kỳ 241",
+        "payment": "DDDH241.11.2210195.1",
+        "amount": 16218000,
+        "paid": 16218000,
+        "paymentDate": "2024-11-14 22:50:36.0",
+        "remaining": 0,
+        "expectedExpiryDate": "2024-11-18 15:00:00"
+      }
+    },
+    {
+      "id": "fbf6",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP363",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T04:38:07.734Z",
+        "amount": 8000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 8000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P363",
+        "amount": 8000,
+        "paid": 0,
+        "paymentDate": "2024-12-13T04:38:07.734Z",
+        "remaining": 8000,
+        "expectedExpiryDate": "2024-12-20T04:38:07.734Z"
+      }
+    },
+    {
+      "id": "tl0t",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP328",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T04:39:41.523Z",
+        "amount": 500,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 500
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P328",
+        "amount": 500,
+        "paid": 0,
+        "paymentDate": "2024-12-13T04:39:41.523Z",
+        "remaining": 500,
+        "expectedExpiryDate": "2024-12-20T04:39:41.523Z"
+      }
+    },
+    {
+      "id": "hlvx",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP610",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T04:47:27.097Z",
+        "amount": 500,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 500
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P610",
+        "amount": 500,
+        "paid": 0,
+        "paymentDate": "2024-12-13T04:47:27.097Z",
+        "remaining": 500,
+        "expectedExpiryDate": "2024-12-20T04:47:27.097Z"
+      }
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import {
 import { useState } from 'react';
 import { isNumber } from 'class-validator';
 import { notification } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 // Hạnh
 import '../assets/Css/Dashboard.css';
@@ -35,17 +36,84 @@ const PriceOfPaper: { [key: string]: number } = {
 type NotificationType = 'success' | 'info' | 'warning' | 'error';
 
 const HomePage = () => {
+  const navigate = useNavigate();
   const [isOpenAdd, setIsOpenAdd] = useState(false);
   const [isOpenCheck, setIsOpenCheck] = useState(false);
   const [selectedPaper, setSelectedPaper] = useState('');
   const [numberOfPages, setNumberOfPages] = useState(0);
   const [api, contextHolder] = notification.useNotification();
 
-  const openNotificationWithIcon = (type: NotificationType) => {
-    api[type]({
-      message: 'In thành công',
-      description: 'In thành công, vui lòng đến quầy thanh toán',
-    });
+  const handleAddTransaction = async () => {
+    try {
+      // First create the transaction for history
+      const newTransaction = {
+        id: `P${Math.floor(Math.random() * 1000)}`,
+        printer: 'P909',
+        price: `${PriceOfPaper[selectedPaper] * numberOfPages}.000`,
+        method: 'Pending',
+        date: new Date().toLocaleDateString('en-GB'),
+        status: 'pending',
+      };
+
+      // Add to history at the beginning
+      const historyResponse = await fetch('http://localhost:3002/history', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newTransaction),
+      });
+
+      if (!historyResponse.ok) {
+        throw new Error('Failed to add transaction to history');
+      }
+
+      // Create payment record
+      const newPayment = {
+        id: `${Math.random().toString(36).substr(2, 4)}`, // Generate a random ID
+        semester: new Date().getFullYear(),
+        content: {
+          contents: `Thanh toán in ấn ${newTransaction.printer}`,
+          paymentPeriod: `IN${newTransaction.id}`,
+          paymentType: 'Phí in ấn',
+          expectedCollectionDate: new Date().toISOString(),
+          amount: PriceOfPaper[selectedPaper] * numberOfPages,
+          provisionalCollection: 0,
+          paid: 0,
+          remaining: PriceOfPaper[selectedPaper] * numberOfPages,
+        },
+        shortContent: {
+          no: 1,
+          shortContent: `Thanh toán in ấn ${newTransaction.printer}`,
+          payment: newTransaction.id,
+          amount: PriceOfPaper[selectedPaper] * numberOfPages,
+          paid: 0,
+          paymentDate: new Date().toISOString(),
+          remaining: PriceOfPaper[selectedPaper] * numberOfPages,
+          expectedExpiryDate: new Date(
+            Date.now() + 7 * 24 * 60 * 60 * 1000
+          ).toISOString(),
+        },
+      };
+
+      // Add to payments
+      const paymentResponse = await fetch('http://localhost:3002/payments', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newPayment),
+      });
+
+      if (!paymentResponse.ok) {
+        throw new Error('Failed to add payment record');
+      }
+
+      // Navigate to payment page after both records are created
+      navigate('/payment');
+    } catch (error) {
+      console.error('Error processing transaction:', error);
+    }
   };
 
   return (
@@ -155,11 +223,9 @@ const HomePage = () => {
             </Button>
             <Button
               className='w-full'
-              onClick={() => {
+              onClick={async () => {
                 setIsOpenCheck(!isOpenCheck);
-                openNotificationWithIcon('success');
-                //do any thing
-
+                await handleAddTransaction();
                 setNumberOfPages(0);
                 setSelectedPaper('');
               }}
@@ -169,16 +235,16 @@ const HomePage = () => {
           </div>
         </Modal>
       </div>
-      <div className='flex-grow h-full bg-white grid grid-cols-2 gap-4'>
-        {/* Col 1 */}
-        <div className='p-4 h-screen flex flex-col'>
+      <div className='flex-grow h-full bg-white grid grid-cols-5 gap-4'>
+        {/* Col 1 - 60% (3/5) */}
+        <div className='col-span-3 p-4 h-screen flex flex-col'>
           <LineChart />
           <TwoBox setOpen={setIsOpenAdd} isOpen={isOpenAdd} />
           <SpendingStatus />
         </div>
 
-        {/* Col 2 */}
-        <div className='p-4 h-full flex flex-col pl-10 pr-40'>
+        {/* Col 2 - 40% (2/5) */}
+        <div className='col-span-2 p-4 h-full flex flex-col pl-5 pr-40'>
           <PaymentCard />
           <RecentTransaction />
         </div>
