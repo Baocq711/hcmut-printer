@@ -661,6 +661,14 @@
       "method": "Pending",
       "date": "22/12/2024",
       "status": "pending"
+    },
+    {
+      "id": "P283",
+      "printer": "P909",
+      "price": "20000.000",
+      "method": "Pending",
+      "date": "30/12/2024",
+      "status": "pending"
     }
   ],
   "report": [
@@ -1033,6 +1041,30 @@
         "paymentDate": "2024-12-22T13:48:44.399Z",
         "remaining": 25000,
         "expectedExpiryDate": "2024-12-29T13:48:44.399Z"
+      }
+    },
+    {
+      "id": "ei83",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP283",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-30T11:57:03.797Z",
+        "amount": 20000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 20000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P283",
+        "amount": 20000,
+        "paid": 0,
+        "paymentDate": "2024-12-30T11:57:03.798Z",
+        "remaining": 20000,
+        "expectedExpiryDate": "2025-01-06T11:57:03.798Z"
       }
     }
   ]

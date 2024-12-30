@@ -78,7 +78,7 @@ vite.config.ts
    ```
 2. Cài đặt các phụ thuộc:
    ```sh
-   bun install
+   npm install --legacy-peer-deps
    ```
 
 ### Chạy Ứng dụng
@@ -94,24 +94,9 @@ bun run dev
 Để xây dựng ứng dụng cho sản xuất, chạy:
 
 ```sh
-bun run build
+npm run dev 
 ```
 
-### Kiểm tra mã
-
-Để kiểm tra mã, chạy:
-
-```sh
-bun run lint
-```
-
-### Xem trước Bản dựng
-
-Để xem trước bản dựng sản xuất, chạy:
-
-```sh
-bun run preview
-```
 
 ## Sử dụng
 
