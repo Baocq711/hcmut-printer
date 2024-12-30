@@ -4,6 +4,7 @@ Dự án này là một ứng dụng web để quản lý dịch vụ in ấn t�
 
 ## Frontend : Reactjs
 
+### Cấu trúc thư mục
 ```
 .gitignore
 .prettierrc
