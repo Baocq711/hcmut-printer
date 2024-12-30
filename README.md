@@ -2,7 +2,7 @@
 
 Dự án này là một ứng dụng web để quản lý dịch vụ in ấn tại HCMUT. Nó được xây dựng bằng React, TypeScript và Vite, với Tailwind CSS để tạo kiểu.
 
-## Cấu trúc Dự án
+## Frontend : Reactjs
 
 ```
 .gitignore
