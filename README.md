@@ -123,8 +123,8 @@ Tailwind CSS được cấu hình trong `tailwind.config.js`.
 
 TypeScript được cấu hình trong `tsconfig.json` và `tsconfig.app.json`.
 
-### Backend
-# JSON Server: Các Route REST API
+
+# Backend : JSON Server
 
 ## 1. Giới Thiệu
 File `database.json` chứa dữ liệu mẫu và JSON Server sẽ tự động tạo các endpoint REST API tương ứng. Dưới đây là danh sách các endpoint có sẵn:
