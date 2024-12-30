@@ -67,7 +67,7 @@ vite.config.ts
 ### Yêu cầu
 
 - Node.js
-- Bun (để quản lý gói)
+- Npm (để quản lý gói)
 
 ### Cài đặt
 
@@ -122,6 +122,66 @@ Tailwind CSS được cấu hình trong `tailwind.config.js`.
 ### TypeScript
 
 TypeScript được cấu hình trong `tsconfig.json` và `tsconfig.app.json`.
+
+### Backend
+# JSON Server: Các Route REST API
+
+## 1. Giới Thiệu
+File `database.json` chứa dữ liệu mẫu và JSON Server sẽ tự động tạo các endpoint REST API tương ứng. Dưới đây là danh sách các endpoint có sẵn:
+
+## 2. Các Route API
+
+### 2.1 Transaction
+- **URL**: `http://localhost:3002/transaction`
+- **Endpoints**:
+  - `GET /transaction` - Lấy tất cả giao dịch.
+  - `GET /transaction/:id` - Lấy giao dịch theo ID.
+  - `POST /transaction` - Tạo giao dịch mới.
+  - `PUT /transaction/:id` - Cập nhật giao dịch theo ID.
+  - `DELETE /transaction/:id` - Xóa giao dịch theo ID.
+
+### 2.2 Printer
+- **URL**: `http://localhost:3002/printer`
+- **Endpoints**:
+  - `GET /printer` - Lấy tất cả thông tin máy in.
+  - `GET /printer/:id` - Lấy thông tin máy in theo ID.
+  - `POST /printer` - Thêm máy in mới.
+  - `PUT /printer/:id` - Cập nhật thông tin máy in.
+  - `DELETE /printer/:id` - Xóa máy in.
+
+### 2.3 History
+- **URL**: `http://localhost:3002/history`
+- **Endpoints**:
+  - `GET /history` - Lấy tất cả lịch sử giao dịch.
+  - `GET /history/:id` - Lấy lịch sử giao dịch theo ID.
+  - `POST /history` - Thêm lịch sử giao dịch mới.
+  - `PUT /history/:id` - Cập nhật lịch sử giao dịch.
+  - `DELETE /history/:id` - Xóa lịch sử giao dịch.
+
+### 2.4 Report
+- **URL**: `http://localhost:3002/report`
+- **Endpoints**:
+  - `GET /report` - Lấy tất cả báo cáo.
+  - `GET /report/:id` - Lấy báo cáo theo ID.
+  - `POST /report` - Tạo báo cáo mới.
+  - `PUT /report/:id` - Cập nhật báo cáo.
+  - `DELETE /report/:id` - Xóa báo cáo.
+
+### 2.5 Payments
+- **URL**: `http://localhost:3002/payments`
+- **Endpoints**:
+  - `GET /payments` - Lấy tất cả thông tin thanh toán.
+  - `GET /payments/:id` - Lấy thông tin thanh toán theo ID.
+  - `POST /payments` - Tạo thanh toán mới.
+  - `PUT /payments/:id` - Cập nhật thanh toán.
+  - `DELETE /payments/:id` - Xóa thanh toán.
+
+## 3. Cách Chạy Server
+1. Cài đặt JSON Server:
+   ```bash
+   npm install json-server --save-dev
+
+
 
 ### Vite
 
