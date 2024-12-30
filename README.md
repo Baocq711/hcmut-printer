@@ -181,6 +181,9 @@ File `database.json` chứa dữ liệu mẫu và JSON Server sẽ tự động 
    ```bash
    npm install json-server --save-dev
 
+2. Chạy Json Server
+   ```bash
+   npm start
 
 
 ### Vite
