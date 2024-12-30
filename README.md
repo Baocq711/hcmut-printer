@@ -86,17 +86,8 @@ vite.config.ts
 Để khởi động máy chủ phát triển, chạy:
 
 ```sh
-bun run dev
+npm run dev
 ```
-
-### Xây dựng Ứng dụng
-
-Để xây dựng ứng dụng cho sản xuất, chạy:
-
-```sh
-npm run dev 
-```
-
 
 ## Sử dụng
 
