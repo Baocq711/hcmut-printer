@@ -573,6 +573,94 @@
       "method": "Pending",
       "date": "13/12/2024",
       "status": "pending"
+    },
+    {
+      "id": "P632",
+      "printer": "P909",
+      "price": "3000.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P892",
+      "printer": "P909",
+      "price": "2000.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P573",
+      "printer": "P909",
+      "price": "8000.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P768",
+      "printer": "P909",
+      "price": "426000.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P275",
+      "printer": "P909",
+      "price": "48000.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P306",
+      "printer": "P909",
+      "price": "4000.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P808",
+      "printer": "P909",
+      "price": "8000.000",
+      "method": "Pending",
+      "date": "13/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P116",
+      "printer": "P909",
+      "price": "1000.000",
+      "method": "Pending",
+      "date": "22/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P313",
+      "printer": "P909",
+      "price": "1000.000",
+      "method": "Pending",
+      "date": "22/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P583",
+      "printer": "P909",
+      "price": "5000.000",
+      "method": "Pending",
+      "date": "22/12/2024",
+      "status": "pending"
+    },
+    {
+      "id": "P60",
+      "printer": "P909",
+      "price": "25000.000",
+      "method": "Pending",
+      "date": "22/12/2024",
+      "status": "pending"
     }
   ],
   "report": [
@@ -608,7 +696,8 @@
         "paymentDate": "2024-11-14 22:50:36.0",
         "remaining": 0,
         "expectedExpiryDate": "2024-11-18 15:00:00"
-      }
+      },
+      "id": "a950"
     },
     {
       "id": "fbf6",
@@ -680,6 +769,270 @@
         "paymentDate": "2024-12-13T04:47:27.097Z",
         "remaining": 500,
         "expectedExpiryDate": "2024-12-20T04:47:27.097Z"
+      }
+    },
+    {
+      "id": "nj86",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP632",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T06:22:41.062Z",
+        "amount": 3000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 3000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P632",
+        "amount": 3000,
+        "paid": 0,
+        "paymentDate": "2024-12-13T06:22:41.062Z",
+        "remaining": 3000,
+        "expectedExpiryDate": "2024-12-20T06:22:41.062Z"
+      }
+    },
+    {
+      "id": "0zym",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP892",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T06:43:04.211Z",
+        "amount": 2000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 2000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P892",
+        "amount": 2000,
+        "paid": 0,
+        "paymentDate": "2024-12-13T06:43:04.211Z",
+        "remaining": 2000,
+        "expectedExpiryDate": "2024-12-20T06:43:04.211Z"
+      }
+    },
+    {
+      "id": "aa94",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP573",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T06:59:28.436Z",
+        "amount": 8000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 8000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P573",
+        "amount": 8000,
+        "paid": 0,
+        "paymentDate": "2024-12-13T06:59:28.436Z",
+        "remaining": 8000,
+        "expectedExpiryDate": "2024-12-20T06:59:28.436Z"
+      }
+    },
+    {
+      "id": "ea7o",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP768",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T07:00:50.566Z",
+        "amount": 426000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 426000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P768",
+        "amount": 426000,
+        "paid": 0,
+        "paymentDate": "2024-12-13T07:00:50.566Z",
+        "remaining": 426000,
+        "expectedExpiryDate": "2024-12-20T07:00:50.566Z"
+      }
+    },
+    {
+      "id": "3cds",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP275",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T07:01:16.604Z",
+        "amount": 48000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 48000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P275",
+        "amount": 48000,
+        "paid": 0,
+        "paymentDate": "2024-12-13T07:01:16.604Z",
+        "remaining": 48000,
+        "expectedExpiryDate": "2024-12-20T07:01:16.604Z"
+      }
+    },
+    {
+      "id": "gkkf",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP306",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T07:04:14.952Z",
+        "amount": 4000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 4000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P306",
+        "amount": 4000,
+        "paid": 0,
+        "paymentDate": "2024-12-13T07:04:14.952Z",
+        "remaining": 4000,
+        "expectedExpiryDate": "2024-12-20T07:04:14.952Z"
+      }
+    },
+    {
+      "id": "c86r",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP808",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-13T07:09:36.240Z",
+        "amount": 8000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 8000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P808",
+        "amount": 8000,
+        "paid": 0,
+        "paymentDate": "2024-12-13T07:09:36.240Z",
+        "remaining": 8000,
+        "expectedExpiryDate": "2024-12-20T07:09:36.240Z"
+      }
+    },
+    {
+      "id": "cfcs",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP116",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-22T13:41:42.938Z",
+        "amount": 1000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 1000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P116",
+        "amount": 1000,
+        "paid": 0,
+        "paymentDate": "2024-12-22T13:41:42.938Z",
+        "remaining": 1000,
+        "expectedExpiryDate": "2024-12-29T13:41:42.938Z"
+      }
+    },
+    {
+      "id": "vcx5",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP313",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-22T13:44:26.742Z",
+        "amount": 1000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 1000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P313",
+        "amount": 1000,
+        "paid": 0,
+        "paymentDate": "2024-12-22T13:44:26.742Z",
+        "remaining": 1000,
+        "expectedExpiryDate": "2024-12-29T13:44:26.742Z"
+      }
+    },
+    {
+      "id": "lap3",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP583",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-22T13:46:27.677Z",
+        "amount": 5000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 5000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P583",
+        "amount": 5000,
+        "paid": 0,
+        "paymentDate": "2024-12-22T13:46:27.677Z",
+        "remaining": 5000,
+        "expectedExpiryDate": "2024-12-29T13:46:27.677Z"
+      }
+    },
+    {
+      "id": "csmy",
+      "semester": 2024,
+      "content": {
+        "contents": "Thanh toán in ấn P909",
+        "paymentPeriod": "INP60",
+        "paymentType": "Phí in ấn",
+        "expectedCollectionDate": "2024-12-22T13:48:44.399Z",
+        "amount": 25000,
+        "provisionalCollection": 0,
+        "paid": 0,
+        "remaining": 25000
+      },
+      "shortContent": {
+        "no": 1,
+        "shortContent": "Thanh toán in ấn P909",
+        "payment": "P60",
+        "amount": 25000,
+        "paid": 0,
+        "paymentDate": "2024-12-22T13:48:44.399Z",
+        "remaining": 25000,
+        "expectedExpiryDate": "2024-12-29T13:48:44.399Z"
       }
     }
   ]

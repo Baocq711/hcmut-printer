@@ -1,16 +1,40 @@
 import Header from '@/components/Momo/Header';
 import bkulogo from '@/assets/bkulogo.png';
 import qrcode from '@/assets/qrcode.png';
+import qr7 from '@/assets/7.png';
 import { HiQrcode } from 'react-icons/hi';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { notification } from 'antd';
 
 const MomoPage = () => {
   const location = useLocation();
   const amount = location.state?.amount || 0;
+  const navigate = useNavigate();
+  const [api, contextHolder] = notification.useNotification();
+
+  type NotificationType = 'success' | 'info' | 'warning' | 'error';
+  const openNotificationWithIcon = (type: NotificationType) => {
+    api[type]({
+      message: 'In thành công',
+      description: 'In thành công, vui lòng đến quầy thanh toán',
+    });
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      openNotificationWithIcon('success');
+    }, 50000);
+    setTimeout(() => {
+      navigate('/');
+    }, 60000);
+  }, []);
 
   return (
     <div>
       <Header />
+
+      {contextHolder}
       <main className='w-screen max-w-[1040px] mx-auto flex gap-8 pt-8'>
         <div className='w-80 px-8 border border-solid border-black'>
           <div className='mb-7 mt-6 text-xl'>Thông tin đơn hàng</div>
@@ -21,6 +45,7 @@ const MomoPage = () => {
               alt=''
               className='mx-auto h-[170px] aspect-[7/5] mb-3'
             />
+
             <div className='font-bold pb-5 border-bottom-black flex justify-center'>
               HCMUT Printer
             </div>
@@ -50,6 +75,13 @@ const MomoPage = () => {
           <div className='mt-8 text-xl'>Quét mã QR để thanh toán</div>
           <div className='p-4 bg-white rounded-[15px] mt-12'>
             <img src={qrcode} alt='' width={280} height={280} />
+            <img
+              src={qr7}
+              alt=''
+              width={218}
+              height={218}
+              className='absolute translate-x-8 -translate-y-[248px]'
+            />
           </div>
           <div className='flex justify-center items-center gap-1 mt-6'>
             <HiQrcode size={24} />
